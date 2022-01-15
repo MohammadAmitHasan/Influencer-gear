@@ -17,7 +17,6 @@ body{
 .container{
     max-width: 1100px;
     margin: 50px auto;
-    padding: 0 50px;
 }
 .container p{
     width: 80%;
@@ -58,6 +57,7 @@ nav{
     align-items: center;
     max-width: 1100px;
     margin: 40px auto;
+    padding: 0 50px;
 }
 
 nav ul{
@@ -81,7 +81,7 @@ nav ul a{
     justify-content: space-between;
 }
 .banner-text-part{
-    width: 50%;
+    width: 550px;
 }
 .banner-text-part h1{
     font-size: 52px;
@@ -94,13 +94,14 @@ nav ul a{
     height: 475px;
     background-image: url(./images/Circle\ design.svg);
     background-repeat: no-repeat;
+    object-fit: fill;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 }
 .banner-photo-part img{
-    width: 80%;
+    width: 400px;
 }
 #banner-btn{
     border-radius: 40px;
@@ -200,14 +201,14 @@ nav ul a{
  margin: 0 0 100px;
 }
 .features-photo-part{
-width: 45%;
+width: 500px;
 }
 .features-photo-part img{
     width: 100%;
     border-radius: 10px;
 }
 .features-text-part{
-width: 50%;
+width: 500px;
 padding: 0 20px;
 }
 
@@ -219,8 +220,8 @@ Fotter section styles
 footer{
     background-color: #0A0826;
     color: white;
-    padding:70px;
     margin-top: 50px;
+    padding: 50px 0;
 }
 footer h2, footer p{
     margin: 10px auto;
@@ -245,4 +246,94 @@ footer p{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+/*----------------------------
+Media query for responsiveness
+--------------------------- */
+
+
+/* For mobile device */
+@media only screen and (max-width: 688px){
+
+    nav{
+        display: none;
+    }
+    .container{
+        width: 95%;
+    }
+    .container p{
+        width: 90%;
+    }
+    #banner,#features{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-text-part h1{
+        font-size: 32px;
+    }
+    .banner-photo-part{
+        order: 1;
+        width: 95%;
+        height: auto;
+        background-size: 95%;
+    }
+    .banner-photo-part img{
+        width: 70%;
+    }
+    .banner-text-part{
+       order: 2;
+       width: 95%;
+    }
+    .popular-collection{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .features-photo-part{
+        width: 90%;
+    }
+    .features-text-part{
+        width: 90%;
+    }
+    
+}
+
+
+/* For Tab devices */
+@media only screen and (min-width:689px) and (max-width:1000px){
+    .container{
+        width: 95%;
+    }
+    .container p{
+        width: 90%;
+    }
+
+    #banner,#features{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-photo-part{
+        order: 1;
+        width: 80%;
+        height: auto;
+        background-size: 80%;
+    }
+    .banner-photo-part img{
+        width: 70%;
+    }
+    .banner-text-part{
+       order: 2;
+       width: 80%;
+    }
+    .banner-text-part h1{
+        font-size: 40px;
+    }
+    .popular-collection{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .features-photo-part{
+        width: 80%;
+    }
+    .features-text-part{
+        width: 80%;
+    }
 }
