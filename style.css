@@ -91,3 +91,15 @@ nav ul a{
 #banner-btn{
     border-radius: 40px;
 }
+.partners{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px auto 0;
+    border: 1px solid;
+    border-image: linear-gradient(to right,rgb(255, 255, 255), rgba(126, 126, 124, 0.226), white);
+    border-image-slice: 1;
+    padding: 20px;
+
+}
