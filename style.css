@@ -34,6 +34,12 @@ body{
     text-decoration: none;
     font-size: 16px;
 }
+.section-title h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
 
 .fas.fa-arrow-right{
     margin-left: 7px;
@@ -69,21 +75,21 @@ nav ul a{
 ----website Banner Styles----
 -------------------------- */
 
-.banner{
+#banner{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.banner-txt{
+.banner-text-part{
     width: 50%;
 }
-.banner-txt h1{
+.banner-text-part h1{
     font-size: 52px;
     font-weight: 700;
     margin-bottom: 0;
 }
 
-.banner-photo{
+.banner-photo-part{
     width: 475px;
     height: 475px;
     background-image: url(./images/Circle\ design.svg);
@@ -93,7 +99,7 @@ nav ul a{
     align-items: center;
     border-radius: 50%;
 }
-.banner-photo img{
+.banner-photo-part img{
     width: 80%;
 }
 #banner-btn{
@@ -103,11 +109,11 @@ nav ul a{
 /*--------------------------
  ------Animation Added -----
  -------------------------*/
-.banner-txt:hover ~ .banner-photo img{
+.banner-text-part:hover ~ .banner-photo-part img{
     transition: transform 1s;
     transform: scale(1.2);
 }
-.banner-txt:hover ~ .banner-photo{
+.banner-text-part:hover ~ .banner-photo-part{
     transition: box-shadow 1s, transform 1s;
     box-shadow: 2px 5px 40px rgba(128, 128, 128, 0.671);
 }
@@ -132,13 +138,6 @@ nav ul a{
  Popular collection section-styles
  --------------------------------*/
 
- .section-title h2{
-     text-align: center;
-     font-size: 28px;
-     font-weight: 600;
-     margin-bottom: 40px;
- }
-
  .popular-collection{
      display: grid;
      grid-template-columns: repeat(3,1fr);
@@ -155,7 +154,7 @@ nav ul a{
      width: 100%;
  }
  .item-info h3{
-     font-size: 28px;
+     font-size: 26px;
      color: #18191F;
      margin: 16px 0 6px;
  }
@@ -187,6 +186,29 @@ nav ul a{
 #see-more-btn a{
     text-decoration: none;
     color: #E02C6DDE;
+}
+
+
+/* -------------------------
+--Feature section styles----
+-------------------------- */
+#features{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ margin: 0 0 100px;
+}
+.features-photo-part{
+width: 45%;
+}
+.features-photo-part img{
+    width: 100%;
+    border-radius: 10px;
+}
+.features-text-part{
+width: 50%;
+padding: 0 20px;
 }
 
 
@@ -223,5 +245,4 @@ footer p{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
 }
