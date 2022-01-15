@@ -40,6 +40,10 @@ body{
     margin-bottom: 40px;
 }
 
+.fas.fa-arrow-right{
+    margin-left: 7px;
+}
+
 /* ----------------------
 --Navication bar styles--
 ---------------------- */
