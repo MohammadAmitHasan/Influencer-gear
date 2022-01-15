@@ -19,6 +19,11 @@ body{
     margin: 50px auto;
     padding: 0 50px;
 }
+.container p{
+    width: 80%;
+    margin: 16px 0;
+    font-size: 16px;
+}
 
 .link-btn{
     padding: 10px 25px;
@@ -35,10 +40,6 @@ body{
     width: 16px;
 }
 
-p{
-    width: 80%;
-    margin: 16px 0;
-}
 
 /* ----------------------
 --Navication bar styles--
@@ -90,13 +91,27 @@ nav ul a{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 .banner-photo img{
-    width: 90%;
+    width: 80%;
 }
 #banner-btn{
     border-radius: 40px;
 }
+
+/*--------------------------
+ ------Animation Added -----
+ -------------------------*/
+.banner-txt:hover ~ .banner-photo img{
+    transition: transform 1s;
+    transform: scale(1.2);
+}
+.banner-txt:hover ~ .banner-photo{
+    transition: box-shadow 1s, transform 1s;
+    box-shadow: 2px 5px 40px rgba(128, 128, 128, 0.671);
+}
+
 .partners{
     width: 80%;
     display: flex;
@@ -172,4 +187,41 @@ nav ul a{
 #see-more-btn a{
     text-decoration: none;
     color: #E02C6DDE;
+}
+
+
+/*-------------------- 
+Fotter section styles
+------------------- */
+
+footer{
+    background-color: #0A0826;
+    color: white;
+    padding:70px;
+    margin-top: 50px;
+}
+footer h2, footer p{
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 700;
+}
+footer p{
+    font-size: 14px;
+}
+.social-media-link-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-media-link{
+    height: 32px;
+    width: 32px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.11);
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
 }
